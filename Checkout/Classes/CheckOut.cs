@@ -43,7 +43,7 @@ namespace CheckOutKata.Classes
 
                 if (discount == null || scannedItem.Quantity < discount.Quantity) //there are no discounts to apply
                 {
-                    totalPrice = unitPrice * scannedItem.Quantity;
+                    totalPrice += unitPrice * scannedItem.Quantity;
                 }
                 else
                 {
